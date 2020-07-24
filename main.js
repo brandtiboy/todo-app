@@ -8,14 +8,16 @@ function addTodo() {
     let edit = document.createElement("button");
     edit.classList.add("edit");
     edit.innerHTML = '<i class="fas fa-wrench"></i>';
-
-    let div = document.createElement('div');
-    div.textContent = newTodoText;
-    div.className = "theTodo";
-    document.querySelector('.wrapper').appendChild(div);
-    document.querySelector('.wrapper').appendChild(done);
-    document.querySelector('.wrapper').appendChild(edit);
-    document.getElementById("todo").value = "";
+    
+    if (newTodoText !== "") {
+        let div = document.createElement('div');
+        div.textContent = newTodoText;
+        div.className = "theTodo";
+        document.querySelector('.wrapper').appendChild(div);
+        document.querySelector('.wrapper').appendChild(done);
+        document.querySelector('.wrapper').appendChild(edit);
+        document.getElementById("todo").value = "";
+    }
 }
 
 let addButton = document.getElementById("todo");
