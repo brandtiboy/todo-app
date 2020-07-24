@@ -1,0 +1,99 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: rgb(255,163,153);
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,151,77,1) 100%);
+}
+
+.wrapper {
+    width: 35%;
+    text-align: center;
+}
+
+h1 {
+    margin: 15% 0 1% 0;
+    font-size: 2.2rem;
+}
+
+p {
+    text-align: left;
+    color: #333;
+    font-weight: 700;
+}
+
+.todo-list {
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+#todo {
+    display: inline-block;
+    width: 89%;
+    padding: 12px;
+    border: none;
+    color: #333;
+    font-weight: 700;
+    background: white;
+}
+
+#add-todo {
+    width: 40px;
+    border: none;
+    padding: 8px;
+    background: #333;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.added-todo {
+    display: inline-block;
+    width: 75%;
+    margin-top: 15px;
+    padding: 20px 10px;
+    border: 3px solid rgb(255,142,130);
+    background: white;
+    /*background: rgb(255,142,130);
+    background: linear-gradient(90deg, rgba(255,142,130,1) 0%, rgba(255,103,77,1) 100%);*/
+} 
+
+.theTodo {
+    text-align: left;
+    display: inline-block;
+    width: 75%;
+    margin: 1%;
+    padding: 3%;
+    border: 3px solid rgb(255,142,130);
+    background: white;
+    color: #222;
+    font-weight: 700;
+}
+
+button {
+    font-size: 1rem;
+    padding: 3.4% 2%;
+    border: none;
+    width: 10%;
+}
+
+.done {
+    background: #222;
+    color: white;
+    margin-right: 10px;
+}
+
+.edit {
+    background:white;
+    color: #333;
+}
