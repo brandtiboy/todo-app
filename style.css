@@ -78,6 +78,7 @@ p {
     background: white;
     color: #222;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 button {
